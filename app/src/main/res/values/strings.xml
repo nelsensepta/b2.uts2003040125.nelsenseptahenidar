@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">b2.uts2003040125.nelsenseptahenidar</string>
+    <string name="col1">No</string>
+    <string name="col2">Matakuliah</string>
+    <string name="col3">SKS</string>
+    <string name="col4">Nilai</string>
+    <string name="col5">Nilai Angka</string>
+
+
+    <string name="row1No">1</string>
+    <string name="row1MK">Pemrograman Dasar</string>
+    <string name="row1SKS">3</string>
+
+<!--    <string name="row1Nilai"></string>-->
+
+    <string name="row2No">2</string>
+    <string name="row2MK">Struktur Data</string>
+    <string name="row2SKS">3</string>
+
+
+    <string name="row3No">3</string>
+    <string name="row3MK">Aplikasi Komputer</string>
+    <string name="row3SKS">3</string>
 </resources>
