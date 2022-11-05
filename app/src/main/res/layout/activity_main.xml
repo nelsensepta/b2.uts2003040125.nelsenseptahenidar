@@ -37,7 +37,8 @@
                     android:padding="10sp"
                     android:text="@string/col1"
                     android:textColor="@android:color/white"
-                    android:textSize="14sp" />
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -45,7 +46,8 @@
                     android:text="@string/col2"
                     android:textColor="@android:color/white"
                     android:padding="10sp"
-                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
                     android:layout_weight="6"
                     android:gravity="start"
                     />
@@ -56,7 +58,8 @@
                     android:text="@string/col3"
                     android:textColor="@android:color/white"
                     android:padding="10sp"
-                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
                     android:layout_weight="2"
                     android:gravity="center_horizontal"
                     />
@@ -66,7 +69,8 @@
                     android:text="@string/col4"
                     android:textColor="@android:color/white"
                     android:padding="10sp"
-                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
                     android:layout_weight="2"
                     android:gravity="center_horizontal"
                     />
@@ -76,8 +80,9 @@
                     android:text="@string/col5"
                     android:textColor="@android:color/white"
                     android:padding="10sp"
-                    android:textSize="14sp"
-                    android:layout_weight="3.5"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_weight="2.5"
                     android:gravity="center_horizontal"
                     />
 
@@ -121,6 +126,7 @@
                     android:padding="10sp"
                     android:id="@+id/row1Nilai"
                     android:textSize="12sp"
+                    android:inputType="numberDecimal"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"/>
 
@@ -128,10 +134,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:id="@+id/row1Angka"
+                    android:id="@+id/row1Huruf"
                     android:padding="10sp"
                     android:textSize="12sp"
-                    android:layout_weight="3.5"
+                    android:layout_weight="2.5"
                     android:gravity="center_horizontal"
                     />
 
@@ -170,6 +176,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="2"
                     android:padding="10sp"
+                    android:inputType="numberDecimal"
                     android:id="@+id/row2Nilai"
                     android:textSize="12sp"
                     android:layout_gravity="center_horizontal"
@@ -179,10 +186,10 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:id="@+id/row2Angka"
+                    android:id="@+id/row2Huruf"
                     android:padding="10sp"
                     android:textSize="12sp"
-                    android:layout_weight="3.5"
+                    android:layout_weight="2.5"
                     android:gravity="center_horizontal"
                     />
 
@@ -222,6 +229,7 @@
                     android:layout_weight="2"
                     android:padding="10sp"
                     android:textSize="12sp"
+                    android:inputType="numberDecimal"
                     android:id="@+id/row3Nilai"
                     android:layout_gravity="center_horizontal"
                     android:layout_height="wrap_content"/>
@@ -230,18 +238,41 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:text=""
-                    android:id="@+id/row3Angka"
+
+                    android:id="@+id/row3Huruf"
                     android:padding="10sp"
                     android:textSize="12sp"
-                    android:layout_weight="3.5"
+                    android:layout_weight="2.5"
+                    android:gravity="center_horizontal"
+                    />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_width="251dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10sp"
+                    android:text="IPK"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:id="@+id/IPK"
+                    android:padding="10sp"
+                    android:textSize="12sp"
+                    android:text=""
                     android:gravity="center_horizontal"
                     />
             </TableRow>
         </TableLayout>
     <Button
         android:id="@+id/hitungNilai"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hitung Nilai"
+        android:text="Hitung IPK"
        />
 </LinearLayout>
