@@ -127,7 +127,8 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/row1SKS"
+                    android:text=""
+                    android:id="@+id/row1Angka"
                     android:padding="10sp"
                     android:textSize="12sp"
                     android:layout_weight="3.5"
@@ -177,7 +178,8 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/row2SKS"
+                    android:text=""
+                    android:id="@+id/row2Angka"
                     android:padding="10sp"
                     android:textSize="12sp"
                     android:layout_weight="3.5"
@@ -227,7 +229,8 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/row3SKS"
+                    android:text=""
+                    android:id="@+id/row3Angka"
                     android:padding="10sp"
                     android:textSize="12sp"
                     android:layout_weight="3.5"
@@ -235,19 +238,10 @@
                     />
             </TableRow>
         </TableLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="IPK :"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        android:textSize="40dp"
-        />
-
     <Button
-        android:id="@+id/hitungIPK"
+        android:id="@+id/hitungNilai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hitung IPK"
+        android:text="Hitung Nilai"
        />
 </LinearLayout>
