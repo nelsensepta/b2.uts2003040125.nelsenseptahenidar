@@ -48,14 +48,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         return grade;
     }
 
-    fun getIPK (grade: Array<String>, SKS: Array<Int>): Float{
-        var ipk: Float = 0.0F;
-        var sum: Float = 0.0F;
+    fun getIPK (grade: Array<String>, SKS: Array<Int>): String{
+        var ipk: String = ""
+        var sum: Float = 0.0F
         var allSKS: Int =  SKS.size
         var i: Int = 0
         while (i <= allSKS -1) {
             sum += when (grade[i])  {
                 "A" -> (SKS[i] * 4).toFloat()
+                "A-" -> (SKS[i] * 3.5).toFloat()
                 "B+" -> (SKS[i] * 3.25).toFloat()
                 "B" -> (SKS[i] * 3).toFloat()
                 "B-" -> (SKS[i] * 2.25).toFloat()
@@ -65,7 +66,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             i++
         }
-        ipk = (sum.toInt() / SKS.sum()).toFloat()
+        ipk =  String.format("%.2f", (sum / SKS.sum()))
         return ipk
     }
     override fun onClick(v: View) {

@@ -5,11 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen">
+
     <RelativeLayout
+        android:id="@+id/splash_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".SplashScreen"
-        android:id="@+id/splash_screen">
+        tools:layout_editor_absoluteX="-35dp"
+        tools:layout_editor_absoluteY="50dp">
 
         <ImageView
             android:layout_width="250dp"
@@ -18,8 +21,17 @@
             android:layout_centerVertical="true"
             android:backgroundTint="#FFFFFF"
             android:scaleType="centerCrop"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="160dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nelsen Septa Henidar (2003040125)"
+             />
 
     </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
